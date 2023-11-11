@@ -19,7 +19,7 @@ app.use(router)
 
 // Storyblok
 app.use(StoryblokVue, {
-    accessToken: 'bjZvdC50eU7xrB9as9khlAtt',
+    accessToken: import.meta.env.VITE_STORYBLOK_ACCESS_TOKEN,
     bridge: process.env.NODE_ENV !== 'production',
     use: [apiPlugin]
 });

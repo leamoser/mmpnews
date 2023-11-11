@@ -11,5 +11,5 @@ import {useRoute} from "vue-router";
 import Header from "@/components/layout/Header.vue";
 
 const route = useRoute();
-const story = await useStoryblok(`news/${route.params.slug}`, { version: 'draft' });
+const story = await useStoryblok(`news/${route.params.slug}`, { version: import.meta.env.VITE_STORYBLOK_VERSION });
 </script>
