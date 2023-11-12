@@ -10,5 +10,5 @@
 <script setup>
 import {useStoryblok} from "@storyblok/vue";
 
-const globals = await useStoryblok(`globals/globals`, {version: 'draft'});
+const globals = await useStoryblok(`globals/globals`, { version: import.meta.env.VITE_STORYBLOK_VERSION });
 </script>
