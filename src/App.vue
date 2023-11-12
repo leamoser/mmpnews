@@ -1,7 +1,3 @@
-<script setup>
-import {RouterView} from 'vue-router'
-</script>
-
 <template>
   <Suspense>
     <template #default>
@@ -13,3 +9,7 @@ import {RouterView} from 'vue-router'
     </template>
   </Suspense>
 </template>
+
+<script setup>
+import {RouterView} from 'vue-router'
+</script>
