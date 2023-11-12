@@ -8,7 +8,6 @@
 <script setup>
 import {useStoryblok} from '@storyblok/vue';
 import Header from "@/components/layout/Header.vue";
-
 const story = await useStoryblok('home', {
       version: import.meta.env.VITE_STORYBLOK_VERSION,
       resolve_relations: 'News-Entries.entries'
